@@ -15,12 +15,9 @@ class Program
         {
             Console.WriteLine(factoryName);
         }
-        //Assembly assembly = Assembly.GetExecutingAssembly();
-        //var allTypes = assembly.GetTypes();
-        //foreach (var type in allTypes)
-        //{
-        //    Console.WriteLine(type.FullName);
-        //}
+        Assembly assembly = Assembly.GetExecutingAssembly();
+
+        Console.WriteLine("\nСоздание документа\n");
 
         // Выбор типа документа, который мы хотим создать
         DocumentFactory factory = GetDocumentFactory("Word");
